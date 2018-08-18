@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyBlue"
+    android:padding="16dp"
+    tools:context=".Activities.ScanActivity">
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnOK"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:hint="@string/scan_detail"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnViewScanList"
+        android:layout_marginBottom="83dp"
+        android:background="@drawable/rounded_button"
+        android:text="OK" />
+
+    <Button
+        android:id="@+id/btnRescan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/text_view"
+        android:layout_alignTop="@+id/btnOK"
+        android:text="RESCAN"
+        android:background="@drawable/rounded_button"/>
+
+    <TextView
+        android:id="@+id/tvAmountRemaining"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnOK"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="-171dp"
+        android:layout_marginTop="31dp"
+        android:textSize="20sp"
+        android:text="Amount Remaining: "
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btnViewScanList"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button2"
+        android:text="View Scanned Item Prices" />
+
+
+
+</RelativeLayout>
